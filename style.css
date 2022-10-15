@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FEF9EF;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding: 0.5em;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.btn{
+    padding: 1em 2.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #FA7E61;
+    color: white;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 5;
+    background-color: #FEF9EF;
+    width: 300px;
+    max-width: 80%;
+    height: 390px;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal-header .close-btn{
+    cursor: pointer; 
+    border:none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body{
+    padding: 10px 15px;
+    text-align: center;
+}
+
+
+.form-style input{
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+.submit-btn{
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 0.9rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: black;
+}
+
+.isread{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#isread{
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    cursor: pointer;
+  }
+
+.overlay{
+   display: none;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+.overlay.active{
+    opacity: 1;
+    pointer-events: all;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.book-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    width: 200px;
+    border:solid black 1px;
+    border-radius: 10%;
+    text-align: center;
+    margin: 0.5em;
+    background-color: #FA7E61;
+    color: white;
+}
+
+
+.removeBtn{
+    padding: 1em;
+    margin: 1em;
+    border: none;
+    border-radius: 10%;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #1E1E24;
+    background-color: #FEF9EF;
+}

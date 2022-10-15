@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <h1>Library</h1>
+    <div class="btn-container">
+        <button data-modal-target="#modal" class="btn" id="add-btn">Add Book</button>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Add new book</div>
+            <button data-close-button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form class="form-style">
+                <input type="text" id="title" name="title" placeholder="Title" required><br>
+                <input type="text" id="author" name="author" placeholder="Author name" required><br>
+                <input type="number" id="pages" name="pages" placeholder="Number of pages" required><br>
+                <div class="isread">
+                    <label for="isread">Have you read it?</label>
+                    <input type="checkbox" id="isread" name="isread "><br>
+                    <span class="checkmark"></span>
+                </div>
+                
+               
+              </form>
+              <a href="#" class="submit-btn" id="submit" data-close-button>Submit</a>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="container">
+        
+        
+        
+    </div>
+</body>
+</html>
